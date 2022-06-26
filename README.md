@@ -21,3 +21,5 @@ POM created for a couple of pages, with methods and properties.  I did not compl
 
 
 These tests are quickly written and probbly would not work - if you were to run it then you would target gauge to read the spec file, the spec file will find it's steps, the steps will use methods within the POM, the methods within the POMs interact with the DOM  (and are reusable).   The test/assert would be in the step file.
+
+Ideally, I would not reference taiko commands directly but instead use a wrapper class - ie a wrapper called `click` which would call the taiko click method.  This would mean I was not tied to using taiko in the future, if I did want to use Cypress (for example) I would just create an use a cypress wrapper class instead of a taiko wrapper class - there would be minimal updates needed in he rest of the code (in theory!).    
