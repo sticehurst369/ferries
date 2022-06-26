@@ -1,0 +1,10 @@
+{
+  "name": "tests",
+  "description": "tests",
+  "scripts": {
+    "test": "gauge run specs/"
+  },
+  "dependencies": {
+    "taiko": "latest",
+  }
+}
